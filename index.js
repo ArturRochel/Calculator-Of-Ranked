@@ -1,7 +1,9 @@
-let saldo = level(10, 5, "Artur Rochel Araujo do Nascimento", "Bradofe")
+let saldo = level(115, 27, "Artur Rochel", "Bradofe")
 
-console.log(`O jogador de nome ${saldo[2]} e de nick ${saldo[3]} possui um saldo de vitórias de ${saldo[0]} 
-e está no ranking ${saldo[1]}.`)
+// Linkedin: https://www.linkedin.com/in/artur-rochel-950361184/
+// Instagram: https://www.instagram.com/artur.rochel/
+
+console.log(`O jogador de nome ${saldo[2]} e de nick ${saldo[3]} possui um saldo de vitórias de ${saldo[0]} e está no ranking ${saldo[1]}.`)
 
 function level(victories, defeats, name, nickName){
     let balance = victories - defeats
