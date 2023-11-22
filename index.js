@@ -1,9 +1,11 @@
-let saldo = level(10, 5)
+let saldo = level(10, 5, "Artur Rochel Araujo do Nascimento", "Bradofe")
 
-console.log(`O Heroi tem o saldo de ${saldo[0]} vitórias e está no nível de ${saldo[1]}.`)
+console.log(`O jogador de nome ${saldo[2]} e de nick ${saldo[3]} possui um saldo de vitórias de ${saldo[0]} 
+e está no ranking ${saldo[1]}.`)
 
-function level(victories, defeats, name, nickName,splitChar){
+function level(victories, defeats, name, nickName){
     let balance = victories - defeats
+    let firstName = name.split(" ")[0]
     let ranked = ""
     if(balance <= 10){
         ranked = "Ferro"
@@ -28,6 +30,6 @@ function level(victories, defeats, name, nickName,splitChar){
     }
     else{ ranked = "Indeterminado"}
 
-    let result = [balance, ranked]
+    let result = [balance, ranked, firstName, nickName]
     return result
 }
